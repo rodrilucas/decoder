@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/globals.css" />
+    <link rel="stylesheet" href="dist/css/styles.css" />
+    <script src="/dist/js/app.js" type="module" defer></script>
+    <title>Decodificador</title>
+  </head>
+  <body>
+    <main>
+      <section class="decoder">
+        <menu class="decoder-menu">
+          <h1 aria-label="alura" class="decoder-menu__title"></h1>
+        </menu>
+        <div class="decoder-text">
+          <form class="decoder-text__form">
+            <fieldset class="decoder-text__form-field">
+              <label for="text"></label>
+              <textarea
+                placeholder="Digite seu texto"
+                name="text"
+                id="text"
+                rows="14"
+              ></textarea>
+            </fieldset>
+            <div class="decoder-text__actions">
+              <span class="decoder-text__actions-warning"
+                >Apenas letras minúsculas e sem acento.</span
+              >
+              <div class="decoder-text__actions-btns">
+                <button class="encrypt">Criptografar</button>
+                <button class="decrypt">Descriptografar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <aside>
+          <div class="decoder-content">
+            <div class="decoder-content__info">
+              <picture>
+                <img
+                  src="/img/girl.svg"
+                  alt="Imagem de uma mulher sentada sobre as pernas com os joelhos dobrados. Na mão da mulher tem uma lupa e à frente da lupa existe um diamante."
+                />
+              </picture>
+              <h2 class="decoder-content__info-title">
+                Nenhuma mensagem encontrada.
+              </h2>
+              <p class="decoder-content__info-text">
+                Digite um texto que você deseja criptografar ou descriptografar.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
