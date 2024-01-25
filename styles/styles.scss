@@ -1,0 +1,133 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.decoder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 120px 1fr 400px;
+  padding: 2.5em;
+  gap: 5rem;
+  background-color: $bg-color;
+
+  &-menu {
+
+    &__title {
+      display: inline-flex;
+
+      &::before {
+        content: "";
+        width: 120px;
+        height: 48px;
+        background-image: url(/img/logo.svg);
+      }
+    }
+  }
+
+  &-text {
+
+    &__form {
+
+      &-field {
+        border: none;
+
+        textarea {
+          resize: none;
+          border: none;
+          width: 100%;
+          outline: none;
+          margin-top: 2em;
+          font-size: 2rem;
+          background-color: transparent;
+
+          &::placeholder {
+            font-size: 2rem;
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    &__actions {
+
+      &-warning {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1em;
+
+        &::before {
+          content: "";
+          width: 16px;
+          height: 16px;
+          background-image: url(/img/exclamation.svg);
+        }
+      }
+
+      &-btns {
+
+        .encrypt {
+          @include button($primary, $white-900);
+        }
+
+        .decrypt {
+          @include button($secondary, $primary);
+          margin-left: 1em;
+        }
+      }
+    }
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: $shadow;
+    height: 100%;
+    border-radius: 2em;
+    padding: 2em;
+    background-color: $white-900;
+
+    &__text {
+      color: $gray-400;
+      font-size: 1.5rem;
+      align-self: flex-start
+    }
+
+    &__copy {
+      @include button($white-900, $primary);  
+      align-self: center;
+      width: 100%;
+      border: 1px solid $primary;
+    }
+
+    &__info {
+
+      picture {
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &-title {
+        color: $gray-400;
+        text-align: center;
+        margin-bottom: 0.5em;
+      }
+
+      &-text {
+        color: $gray-500;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .decoder {
+    flex-direction: row;
+  }
+}
