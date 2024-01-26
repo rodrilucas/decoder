@@ -3,7 +3,7 @@
 @mixin button($bg-color, $color) {
   cursor: pointer;
   border-radius: 1.5em;
-  padding: 1.5em 8em;
+  padding: 1.5em 6em;
   background-color: $bg-color;
   border: none;
   color: $color;
