@@ -14,13 +14,13 @@ Clone o repositório e instale as dependências com:
 
 ```sh
 # Clone o repositório
-git clone https://github.com/seu-usuario/challenge.git
+git clone https://github.com/seu-usuario/decoder.git
 
 # Acesse a pasta do projeto
-cd challenge
+cd decoder
 
 # Instale as dependências
-npm install
+npm decoder
 ```
 
 ## 🎨 Compilando SASS
