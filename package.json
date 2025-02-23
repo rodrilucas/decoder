@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc -w && sass --watch styles:dist/css --no-source-map",
     "sass:watch": "sass --watch styles:dist/css --no-source-map",
     "tsc:watch": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
